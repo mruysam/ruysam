@@ -1,7 +1,4 @@
-
 package trabalho;
-
-import java.util.Scanner;
 
 
 
@@ -11,14 +8,7 @@ public class TURING {
 
     int CONT;
     char FITA[];
-    public static void main(String[] args) {
-        TURING MAQ = new TURING();
-           Scanner ENTRADA = new Scanner(System.in);
-           String PALAVRA;
-           System.out.println("ENTRE COM A PALAVRA :");
-           PALAVRA = ENTRADA.nextLine();
-           MAQ.Iniciar(PALAVRA);
-    }
+    
     public void Iniciar(String SENTENCA){
         CONT = 0;
         FITA = SENTENCA.toCharArray();
@@ -152,5 +142,3 @@ public class TURING {
             System.err.println("PALAVRA NAO ACEITA !" + PALAVRA);
         }
 }
-    
-
